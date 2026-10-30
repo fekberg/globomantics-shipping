@@ -14,6 +14,7 @@ public class HavsgrenLinesTrackingStatusesTests
     [InlineData("AT_HUB", ShipmentStatus.InTransit)]
     [InlineData("IN_LINEHAUL", ShipmentStatus.InTransit)]
     [InlineData("OFD", ShipmentStatus.OutForDelivery)]
+    [InlineData("WITH_COURIER", ShipmentStatus.OutForDelivery)]
     [InlineData("DELIVERED", ShipmentStatus.Delivered)]
     [InlineData("DELIVERED_NEIGHBOUR", ShipmentStatus.Delivered)]
     [InlineData("ATTEMPT_FAILED", ShipmentStatus.DeliveryFailed)]
@@ -30,6 +31,6 @@ public class HavsgrenLinesTrackingStatusesTests
     [Fact]
     public void MapsEveryCodeInTheSpec()
     {
-        Assert.Equal(12, _adapter.TrackingStatuses.Count);
+        Assert.Equal(13, _adapter.TrackingStatuses.Count);
     }
 }

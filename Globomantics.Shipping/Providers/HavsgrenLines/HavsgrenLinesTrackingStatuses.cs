@@ -12,6 +12,7 @@ public static class HavsgrenLinesTrackingStatuses
             ["AT_HUB"] = ShipmentStatus.InTransit,
             ["IN_LINEHAUL"] = ShipmentStatus.InTransit,
             ["OFD"] = ShipmentStatus.OutForDelivery,
+            ["WITH_COURIER"] = ShipmentStatus.OutForDelivery,
             ["DELIVERED"] = ShipmentStatus.Delivered,
             ["DELIVERED_NEIGHBOUR"] = ShipmentStatus.Delivered,
             ["ATTEMPT_FAILED"] = ShipmentStatus.DeliveryFailed,
